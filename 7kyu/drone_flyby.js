@@ -12,11 +12,20 @@
 
 function flyBy(lamps, drone){
 
-    let droneLength = drone.length 
-    let onLamps = 'o'.repeat(droneLength)
-    
-    let newLamps = onLamps+"x".repeat(lamps.length-onLamps.length)
-    
-    return newLamps
-    
+  let droneLength = drone.length 
+  let onLamps = 'o'.repeat(droneLength)
+  
+  
+  let newLamps;
+  
+  if (onLamps.length > lamps.length) {
+    newLamps = lamps.replace("x".repeat(lamps.length), "o".repeat(lamps.length))
   }
+  else 
+    {
+      newLamps = lamps.replace("x".repeat(onLamps.length), 'o'.repeat(onLamps.length))
+    }
+  
+  return newLamps
+  
+}
