@@ -16,7 +16,7 @@
 
 function findMissingLetter(array)
 {
-  let alphabets = "abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" 
+  let alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" 
   
   let index = alphabets.indexOf(array[0])
   
