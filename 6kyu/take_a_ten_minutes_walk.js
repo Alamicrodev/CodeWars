@@ -35,5 +35,5 @@ function isValidWalk(walk) {
           return false
         }
       
-    }
+    } 
   }
