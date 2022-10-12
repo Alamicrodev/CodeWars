@@ -28,7 +28,7 @@ function isLeapYear(duration, year) {
     if (year % leapAfterYears == 0) {
       return true
     }
-   else 
+   else  
      {
        return false 
      }
