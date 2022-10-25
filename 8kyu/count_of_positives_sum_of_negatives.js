@@ -10,20 +10,26 @@
 // -------------------- My Solution -----------------------------------
 
 function countPositivesSumNegatives(input) {
-    let positiveCount = 0
-    let negativeSum = 0
-    
-    for (let i of input) 
-      {   
-        if (i > 0) {
-          positiveCount++; 
-        }
-        else if (i < 0) {
-          negativeSum += i; 
-        }
-      }
-    
-    return [positiveCount, negativeSum]
+  if (input == null) {
+    return []
   }
-
   
+  if (input.length == 0) {
+    return []
+  }
+  
+  let positiveCount = 0
+  let negativeSum = 0
+  
+  for (let i of input) 
+    {   
+      if (i > 0) {
+        positiveCount++; 
+      }
+      else if (i < 0) {
+        negativeSum += i; 
+      }
+    }
+  
+  return [positiveCount, negativeSum]
+}
