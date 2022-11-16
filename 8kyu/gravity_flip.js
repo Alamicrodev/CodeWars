@@ -26,4 +26,4 @@ const flip=(d, a)=>{
         flippedValues = a.sort((a,b) => b-a)
       }
     return flippedValues
-  }
+  } 
