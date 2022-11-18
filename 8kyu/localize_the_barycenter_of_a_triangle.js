@@ -16,7 +16,7 @@
 // barTriang([4, 2], [12, 2], [6, 10]) ------> [7.3333, 4.6667]
 
 // The given points form a real or a degenerate triangle but in each case the above formulas can be used.
-// Enjoy it and happy coding!!
+// Enjoy it and happy coding!! 
 
 // -------------------- My Solution -----------------------------------
 
