@@ -10,7 +10,7 @@
 // Python & JavaScript: your solution need to work with huge numbers (about a milion digits), converting to int will not work.
 
 // -------------------- My Solution -----------------------------------
-// Explanation: since we can't directly convert to Numbers, we imagine we are doing this on paper and 
+// Explanation: since we can't directly convert to Numbers because the functions don't support large nums, we imagine we are doing this on paper and 
 // add each column individually and take the carry on to the next one. 
 
 function sumStrings(a,b) { 
