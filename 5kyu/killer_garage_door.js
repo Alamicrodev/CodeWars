@@ -24,3 +24,80 @@
 
 // -------------------- My Solution -----------------------------------
 
+function door(events) {
+  
+    console.log(events)
+    
+    let doorPosition = 0
+    let output = ""
+    let direction = "goingUp"
+    let status = "paused"
+    
+    for (let i=0; i<events.length; i++) {
+      if (events[i] == "P"){
+          if (doorPosition == 0) {
+            doorPosition++; 
+            status = "running"
+            direction = "goingUp"
+            output += String(doorPosition)
+          }
+         else if (doorPosition == 5) {
+            doorPosition--; 
+            status = "running"
+            direction = "goingDown"
+            output += String(doorPosition)
+         }
+         else {
+            if (status == "paused") {
+                status = "running"
+                if (direction == "goingUp") {
+                doorPosition++;
+                } 
+                else {
+                doorPosition--;
+                }
+                output += String(doorPosition)
+            }
+           else {
+                status = "paused"
+                output += String(doorPosition)
+           }
+          
+        }
+      }
+      else if (events[i] == "O") {
+        if (direction == "goingDown") {
+          direction = "goingUp"
+          doorPosition++;
+          output += String(doorPosition)
+        }
+        else {
+          direction = "goingDown"
+          doorPosition--; 
+          output += String(doorPosition)
+        }
+      }
+      else {
+        if (status == "paused") {
+          output += String(doorPosition)
+        }
+        else {
+          if (direction == "goingUp") {
+            doorPosition++;
+            output += String(doorPosition)
+            if (doorPosition == 5 || doorPosition == 0) {
+              status = "paused"
+            }
+          }
+          else {
+            doorPosition--; 
+            output += String(doorPosition)
+            if (doorPosition == 5 || doorPosition == 0) {
+              status = "paused"
+            }
+          }
+        }
+      }
+  }
+    return output;    
+}
