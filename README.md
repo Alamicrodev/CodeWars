@@ -2,7 +2,7 @@
 
 ![ProfileBadge](https://www.codewars.com/users/Alamicrodev/badges/large)
 
-This repo is filled with codewars challenges, known on the site as kata. Currently ranked top 30% on the site. I try to complete a kata everyday and atleast 5 in a week. The challenge difficulty increases as you go from high kyu to low kyu.
+This repo is filled with codewars challenges, known on the site as kata. Currently ranked top 14% on the site. I try to complete a kata everyday and atleast 5 in a week from either leetcode or codewars. The challenge difficulty increases as you go from high kyu to low kyu.
 
 
 ## Languages used:
