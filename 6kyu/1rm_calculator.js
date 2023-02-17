@@ -30,4 +30,4 @@ function calculate1RM(w, r){
        
        return maximumWeight
      }
-   }
+   } 
